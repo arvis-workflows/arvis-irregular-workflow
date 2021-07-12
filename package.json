@@ -1,0 +1,27 @@
+{
+  "name": "arvis-irregular-verbs",
+  "version": "0.0.1",
+  "description": "Arvis workflow to show forms of English irregular verbs",
+  "main": "index.js",
+  "dependencies": {
+    "arvish": ">=0.5.6",
+    "irverbs": "^1.0.6"
+  },
+  "devDependencies": {
+    "ava": "^3.5.2"
+  },
+  "scripts": {
+    "test": "ava",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup",
+    "prepublishOnly": "arvish-prepublish"
+  },
+  "keywords": [
+    "arvis",
+    "workflow",
+    "irregular",
+    "verbs"
+  ],
+  "author": "Alexander Melihov",
+  "license": "MIT"
+}

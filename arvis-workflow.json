@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "defaultIcon": "icon.png",
+  "creator": "Alexandr Melihovv",
+  "description": "Show forms of English irregular verbs",
+  "name": "arvis-irregular-verbs",
+  "readme": "",
+  "version": "0.0.1",
+  "webAddress": "https://github.com/arvis-workflows/arvis-irregular-workflow",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "command": "irr",
+      "title": "Irregular verbs",
+      "subtitle": "Show irregular verb forms",
+      "scriptFilter": "node index.js \"{query}\"",
+      "runningSubtext": "Loading",
+      "withspace": true,
+      "argType": "required",
+      "actions": [
+        {
+          "modifiers": "normal",
+          "type": "clipboard",
+          "text": "{query}"
+        }
+      ]
+    }
+  ]
+}
